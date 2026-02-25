@@ -8,7 +8,6 @@ final class Parser
 {
     public function parse(string $inputPath, string $outputPath): void
     {
-        $start = microtime(true);
         $file = fopen($inputPath, 'r');
         if (!$file) {
             throw new Exception("Could not open the file!");
